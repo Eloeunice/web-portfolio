@@ -1,0 +1,28 @@
+:root{
+    --primary-text: #fff ;
+    --secondary-text: #0f4c6e;
+    --principal-font: "Bricolage Grotesque", sans-serif;
+
+}
+
+body{
+  background: linear-gradient(
+    135deg,
+    #0b1f3a 10%,
+    #0f4c6e 40%,
+    #0fa3a3 75%,
+    #7fd6c2 100%
+  );
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+
+  font-family: var(--principal-font);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--primary-text);
+}
+
+
