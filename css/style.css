@@ -25,4 +25,62 @@ body{
   color: var(--primary-text);
 }
 
+.logo img {
+  height: 50px;   /* controla o tamanho */
+  width: auto;    /* mantém proporção */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.menu {
+    display:flex
+}
+
+header span {
+    margin: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    gap: 40px
+}
+
+#hero {
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+}
+
+#contact-me {
+    display: inline-block;
+    border-color: #fff ;
+    background: rgba(134, 134, 134, 0.205);
+    border-style: solid 1px;
+    border-radius: 12px;
+    padding: 10px 28px;
+    align-content: center;
+    margin: 15px;
+    color: var(--primary-text) ;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.profile-img  {
+    display: flex;
+}
+
+#profile {
+    height: 300px;   /* controla o tamanho */
+    width: auto;    /* mantém proporção */
+    border-radius: 50%;
+}
 
