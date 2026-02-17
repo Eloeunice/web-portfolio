@@ -1,77 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eloiza Almeida</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Eloiza Almeida - Backend Developer">
+  <title>Eloiza Almeida | Backend Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header> 
-        <div class="menu">
-            <a href="#" class="logo">
-                <img src="./assets/Elegant_Logo_for_Fashion_Brand-removebg-preview.png" alt="" srcset="">
-            </a>
-            <span>Home</span>
-            <span>About</span>
-            <span>Resume</span>
-            <span>Portfolio</span>
-            <span>Services</span>
-            <span>Contact</span>
-        </div>
-        <div>
-        </div>
-    </header>
-    <main>
-    <div class="hero">
-        <section id="hero">
-        <h1> Eloiza Almeida | Backend Developer</h1>
-        <ul>
-            <li>Associate Degree in Systems Analysis and Development</li>
-            <li>2+ Year of Experience</li>
-            <li>Brazil</li>
-        </ul>
-        <button id="contact-me">Contact Me</button>
-    </section>
 
-        <div class="profile-img">
-            <img id="profile" src="/assets/_ (11).jpeg" alt="">
-        </div>
+  <header class="header" id="header">
+    <div class="container header-content">
+      <a href="#hero" class="logo" aria-label="Ir para o início">
+        <img src="./assets/Elegant_Logo_for_Fashion_Brand-removebg-preview.png" alt="Logo Eloiza Almeida">
+      </a>
 
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu" id="mainMenu">
+        <a href="#hero">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#resume">Resumo</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+      </nav>
     </div>
+  </header>
 
-
-    <section class="tech-ribbon">
-        <div class="ribbon-track">
-            <div class="ribbon-content">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Node.js</span>
-                <span>React</span>
-                <span>TypeScript</span>
-
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Node.js</span>
-                <span>React</span>
-                <span>TypeScript</span>
-            </div>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="hero-greeting">Olá, eu sou</span>
+          <h1>Eloiza Almeida</h1>
+          <p class="hero-title">Backend Developer</p>
+          <ul class="hero-highlights">
+            <li><strong>Formação:</strong> Análise e Desenvolvimento de Sistemas</li>
+            <li><strong>Experiência:</strong> 2+ anos</li>
+            <li><strong>País:</strong> Brasil</li>
+            <li><strong>Disponível:</strong> Freelancer | PJ | CLT</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-outline">Entre em contato</a>
+            <a href="#portfolio" class="btn btn-outline">Ver meus trabalhos</a>
+          </div>
         </div>
-
+        <div class="profile-img">
+          <img src="./assets/_ (11).jpeg" alt="Foto de perfil - Eloiza Almeida">
+        </div>
+      </div>
     </section>
-    <section id="skills"></section>
-    <section id="resume"></section>
-    <section id="portfolio"></section>
-    <section id="services"></section>
-    <section id="contact"></section>
-    </main>
-    <footer></footer>
-    <script src="./js/script.js"></script>
-    
+
+    <section class="tech-ribbon" aria-hidden="true">
+      <div class="ribbon-content">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>Express</span>
+        <span>PostgreSQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>Express</span>
+        <span>PostgreSQL</span>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre mim</h2>
+        <div class="about-content">
+          <p class="about-text">
+            Desenvolvedora backend apaixonada por criar soluções robustas e escaláveis.
+            Formada em Análise e Desenvolvimento de Sistemas, com foco em Node.js, APIs REST
+            e boas práticas de código. Busco sempre aprender e aplicar as melhores tecnologias
+            para entregar valor real.
+          </p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            </div>
+            <div class="timeline-content">
+              <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+              <p class="timeline-meta">UNINTER · Fev/2024 – Jul/2026 (em andamento)</p>
+              <p>Formação superior em desenvolvimento de software, boas práticas e engenharia de software.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            </div>
+            <div class="timeline-content">
+              <h3>Assistente de Tecnologia</h3>
+              <p class="timeline-meta">Grupo OTG · Jun/2024 – Dez/2024</p>
+              <p>Desenvolvimento de scripts em Python para automação, suporte técnico, controle de acessos e mapeamento de fluxos internos.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div class="timeline-content">
+              <h3>Assistente de BI</h3>
+              <p class="timeline-meta">Grupo OTG · Jan/2025 – Jun/2025</p>
+              <p>Criação de dashboards no Power BI com definição de KPIs, automação de processos com N8N e consultas SQL para análise de dados.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/></svg>
+            </div>
+            <div class="timeline-content">
+              <h3>Suporte Técnico</h3>
+              <p class="timeline-meta">Tecnofábrica · Set/2025 – Dez/2025</p>
+              <p>Suporte a sistemas internos em produção, investigação e resolução de problemas técnicos, apoio à estabilidade dos sistemas.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="timeline-content">
+              <h3>Desenvolvedora Back-End Júnior</h3>
+              <p class="timeline-meta">Tecnofábrica (Vibe Coder) · Dez/2025 – Atual</p>
+              <p>Desenvolvimento e manutenção de APIs RESTful com Node.js e TypeScript, testes com Jest, correção de bugs e funcionalidades assíncronas. Participação em cerimônias ágeis (Scrum/Kanban).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Meu portfólio</h2>
+        <div class="portfolio-tabs" role="tablist">
+          <button type="button" class="portfolio-tab active" data-tab="all" role="tab">Todos</button>
+          <button type="button" class="portfolio-tab" data-tab="web" role="tab">Websites</button>
+          <button type="button" class="portfolio-tab" data-tab="app" role="tab">Artigos</button>
+        </div>
+        <div class="portfolio-slider">
+          <button type="button" class="portfolio-arrow portfolio-prev" aria-label="Projetos anteriores">&lt;</button>
+          <div class="portfolio-grid-wrap">
+          <div class="portfolio-grid">
+            <article class="portfolio-card" data-category="web">
+              <div class="portfolio-card-preview">
+                <img src="https://picsum.photos/400/240?random=1" alt="Preview Projeto API">
+              </div>
+              <div class="portfolio-card-inner">
+                <h3>Projeto API</h3>
+                <p>API REST com Node.js e boas práticas.</p>
+              </div>
+            </article>
+            <article class="portfolio-card" data-category="web">
+              <div class="portfolio-card-preview">
+                <img src="https://picsum.photos/400/240?random=2" alt="Preview Projeto Full Stack">
+              </div>
+              <div class="portfolio-card-inner">
+                <h3>Projeto Full Stack</h3>
+                <p>Aplicação completa com front e backend.</p>
+              </div>
+            </article>
+            <article class="portfolio-card" data-category="app">
+              <div class="portfolio-card-preview">
+                <img src="https://picsum.photos/400/240?random=3" alt="Preview Projeto Backend">
+              </div>
+              <div class="portfolio-card-inner">
+                <h3>Projeto Backend</h3>
+                <p>Serviços e integrações.</p>
+              </div>
+            </article>
+            <article class="portfolio-card" data-category="web">
+              <div class="portfolio-card-preview">
+                <img src="https://picsum.photos/400/240?random=4" alt="Preview Landing Page">
+              </div>
+              <div class="portfolio-card-inner">
+                <h3>Landing Page</h3>
+                <p>Site institucional responsivo.</p>
+              </div>
+            </article>
+            <article class="portfolio-card" data-category="app">
+              <div class="portfolio-card-preview">
+                <img src="https://picsum.photos/400/240?random=5" alt="Preview Dashboard">
+              </div>
+              <div class="portfolio-card-inner">
+                <h3>Dashboard</h3>
+                <p>Painel administrativo com React.</p>
+              </div>
+            </article>
+            <article class="portfolio-card" data-category="web">
+              <div class="portfolio-card-preview">
+                <img src="https://picsum.photos/400/240?random=6" alt="Preview E-commerce API">
+              </div>
+              <div class="portfolio-card-inner">
+                <h3>E-commerce API</h3>
+                <p>Backend para loja virtual.</p>
+              </div>
+            </article>
+          </div>
+          </div>
+          <button type="button" class="portfolio-arrow portfolio-next" aria-label="Próximos projetos">&gt;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Serviços</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Performance & Otimização</h3>
+            <p>Otimização de APIs, consultas e tempo de resposta.</p>
+          </div>
+          <div class="service-card">
+            <h3>Soluções Full-Stack</h3>
+            <p>Projetos completos do front ao backend.</p>
+          </div>
+          <div class="service-card">
+            <h3>Desenvolvimento Backend</h3>
+            <p>APIs REST, autenticação, banco de dados e integrações.</p>
+          </div>
+          <div class="service-card">
+            <h3>Agentes de IA</h3>
+            <p>Criação de agentes de IA para automação de tarefas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-content">
+          <p class="contact-intro">Quer trabalhar junto? Fale comigo.</p>
+          <div class="contact-icons">
+            <a href="https://github.com" target="_blank" rel="noopener" class="contact-icon" aria-label="GitHub" title="GitHub">G</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-icon" aria-label="LinkedIn" title="LinkedIn">in</a>
+            <a href="mailto:contato@exemplo.com" class="contact-icon" aria-label="E-mail" title="E-mail">@</a>
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="contact-icon" aria-label="WhatsApp" title="WhatsApp">✆</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Eloiza Almeida. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
